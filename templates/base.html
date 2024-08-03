@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BroForms</title>
+    <link href="/static/pico/css/pico.css" rel="stylesheet">
+    {% block head %}{% endblock %}
+<!--
+    <link rel="stylesheet" href="/static/pico/css/pico.classless.css">
+-->
+  </head>
+  <body>
+    {% include "header.html" %}
+    <hr />
+    <main>
+      {% block main %}{% endblock %}
+    </main>
+    <style>
+      body {
+      }
+      main {
+        padding: 1rem;
+      }
+    </style>
+  </body>
+</html>

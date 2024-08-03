@@ -1,5 +1,7 @@
 # BroForms
-An OpenSource Form Data Backend to Store data for any forms.
+An OpenSource Form Backend to Store data for any forms.
+**Note: Currently File Uploads are not supported**
+
 
 ## Usage
 
