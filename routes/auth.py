@@ -15,7 +15,7 @@ router = APIRouter(
 )
 
 @router.post("/signup", response_model=User)
-async def signup(form_data: UserForm = Depends()):
+async def signup(form_data: UserForm):
     u = getUser(form_data.username)
     if u:
         raise HTTPException(status_code=400, detail="Username already taken")
