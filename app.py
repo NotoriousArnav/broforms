@@ -25,10 +25,13 @@ async def ping():
         'message': 'ping'
     }
 
-app.mount(
-    "/static",
-    StaticFiles(directory="static"),
-    name="static"
-)
+try:
+    app.mount(
+        "/static",
+        StaticFiles(directory="static"),
+        name="static"
+    )
+except Exception as e:
+    print(e)
 
 app.include_router(router)
