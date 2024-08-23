@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "418927efbd9ca0bd6a0e9c384239ace82dc0df72bc9b143e629caa3ae3189b24"
+            "sha256": "8050c6730baa4fbbe83c0dd749dc614d3c60ebfda4a0ce291b957fd2384bb78e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -158,14 +158,21 @@
             "markers": "python_version >= '3.8'",
             "version": "==2.6.1"
         },
+        "email-validator": {
+            "hashes": [
+                "sha256:561977c2d73ce3611850a06fa56b414621e0c8faa9d66f2611407d87465da631",
+                "sha256:cb690f344c617a714f22e66ae771445a1ceb46821152df8e165c5f9a364582b7"
+            ],
+            "version": "==2.2.0"
+        },
         "fastapi": {
             "hashes": [
-                "sha256:3487ded9778006a45834b8c816ec4a48d522e2631ca9e75ec5a774f1b052f821",
-                "sha256:d262bc56b7d101d1f4e8fc0ad2ac75bb9935fec504d2b7117686cec50710cf05"
+                "sha256:b2537146f8c23389a7faa8b03d0bd38d4986e6983874557d95eed2acc46448ef",
+                "sha256:bcbd45817fc2a1cd5da09af66815b84ec0d3d634eb173d1ab468ae3103e183e4"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.8'",
-            "version": "==0.112.0"
+            "version": "==0.112.1"
         },
         "h11": {
             "hashes": [
@@ -177,11 +184,11 @@
         },
         "idna": {
             "hashes": [
-                "sha256:028ff3aadf0609c1fd278d8ea3089299412a7a8b9bd005dd08b9f8285bcb5cfc",
-                "sha256:82fee1fc78add43492d3a1898bfa6d8a904cc97d8427f683ed8e798d07761aa0"
+                "sha256:050b4e5baadcd44d760cedbd2b8e639f2ff89bbc7a5730fcc662954303377aac",
+                "sha256:d838c2c0ed6fced7693d5e8ab8e734d5f8fda53a039c0164afb0b82e771e3603"
             ],
-            "markers": "python_version >= '3.5'",
-            "version": "==3.7"
+            "markers": "python_version >= '3.6'",
+            "version": "==3.8"
         },
         "phonenumbers": {
             "hashes": [
@@ -200,6 +207,9 @@
             "version": "==2.22"
         },
         "pydantic": {
+            "extras": [
+                "email"
+            ],
             "hashes": [
                 "sha256:6f62c13d067b0755ad1c21a34bdd06c0c12625a22b0fc09c6b149816604f7c2a",
                 "sha256:73ee9fddd406dc318b885c7a2eab8a6472b68b8fb5ba8150949fc3db939f23c8"
@@ -387,11 +397,11 @@
         },
         "starlette": {
             "hashes": [
-                "sha256:6fe59f29268538e5d0d182f2791a479a0c64638e6935d1c6989e63fb2699c6ee",
-                "sha256:9af890290133b79fc3db55474ade20f6220a364a0402e0b556e7cd5e1e093823"
+                "sha256:4ec6a59df6bbafdab5f567754481657f7ed90dc9d69b0c9ff017907dd54faeff",
+                "sha256:c7c0441065252160993a1a37cf2a73bb64d271b17303e0b0c1eb7191cfb12d75"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==0.37.2"
+            "version": "==0.38.2"
         },
         "typing-extensions": {
             "hashes": [
