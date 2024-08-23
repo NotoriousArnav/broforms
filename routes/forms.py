@@ -1,9 +1,9 @@
-from fastapi import APIRouter, HTTPException, Depends
+from fastapi import APIRouter, HTTPException, Depends, status
 from schemas.forms import FormData, FormData_
 from schemas.users import User
 from db import db
 from bson import ObjectId
-from typing import List, Dict
+from typing import List, Dict, Union
 from security import get_current_active_user
 
 router = APIRouter(
@@ -20,6 +20,11 @@ async def form_info(id: str):
             '_id': ObjectId(id)
         }
     )
+    if not form:
+        raise HTTPException(
+            status_code=404,
+            detail=(f"Form not found", id)
+        )
     form['id'] = str(form['_id'])
     Form = FormData_(**form)
     Form.id = id
