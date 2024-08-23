@@ -12,6 +12,7 @@ pymongo = "*"
 argon2-cffi = "*"
 pyjwt = "*"
 "pydantic[email]" = "*"
+python-multipart = "*"
 
 [scripts]
 runserver = "uvicorn app:app --reload --host 0.0.0.0 --port 8000"
